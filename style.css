@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 👇 Soft, eye-friendly gradient */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Container */
+.container {
+    width: 340px;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: white;
+}
+
+/* 👇 FIX: Proper spacing inside inputs */
+input,
+select {
+    width: 100%;
+    padding: 10px 14px;
+    /* left-right spacing fix */
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    box-sizing: border-box;
+    /* IMPORTANT FIX */
+
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    color: white;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.04);
+    background: linear-gradient(135deg, #434190, #553c9a);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
